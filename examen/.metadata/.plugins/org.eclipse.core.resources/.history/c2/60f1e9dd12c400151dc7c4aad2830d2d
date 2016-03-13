@@ -1,0 +1,15 @@
+'''
+Created on 26 Jan 2016
+
+@author: name
+'''
+from Domain import *
+
+class Controller:
+    def __init(self,repository):
+        self.__repository=repository
+        
+    def newWord(self, initLang,initWord, destLang,finalWord):
+        self.word=Word(initLang,initWord,destLang,finalWord)
+        self.__repository.addWord(self.word)
+        

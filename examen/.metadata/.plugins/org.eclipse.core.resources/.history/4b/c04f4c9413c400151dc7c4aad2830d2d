@@ -1,0 +1,31 @@
+'''
+Created on 26 Jan 2016
+
+@author: name
+'''
+
+
+class Menu:
+    
+    def __init__(self):
+        self.toShow=""
+        
+        self.toShow+="1.Adaugare cuvan \n"
+        self.toShow+="2. Afisare dictionar \n"
+        
+    def printMainMenu(self):
+        print(self.toShow)
+        
+    def getOption(self):
+        try:
+            self.option=int(input("Optiunea dumneavoastra: "))
+            
+        except ValueError:
+            print("Optiune invalida! ")
+        return self.option
+    
+    def autoPlay(self):
+        self.option=-1
+        while(self.option!=0):
+            self.printMainMenu()
+            self.option=self.getOption()

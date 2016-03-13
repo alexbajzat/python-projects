@@ -1,0 +1,57 @@
+'''
+Created on 04 Jan 2016
+
+@author: name
+'''
+
+
+def isSorted(list):
+   
+    
+    for i in range(0, len(list)-1):
+        
+            if list[i]>=list[i+1]:
+                return False
+        
+    return True
+
+def printList(list):
+    
+    for i in list:
+        
+            print(i,end=" ,") 
+    
+    
+    
+def solution(origList,list):
+    
+    for i in range(0,len(list)-1):
+        if list[i]!=None and list[i+1]!=None:
+            if origList.index(list[i]) > origList.index(list[i+1]) :
+                return False
+    return True
+
+def subSeq(index,origList,list,i):
+    #list=[None]*len(list)
+    
+    for index in range(i,len(origList)-1):
+        for j in range(index, len(origList)):
+            list[index]=origList[j]
+            #print(list)
+            
+            if isSorted(list):
+                if solution(origList,list):
+                    
+                    printList(list)
+                
+                
+            
+            
+            
+  
+ 
+list=[1,2,3,7,5,6]
+
+for i in range(0,len(list)):
+    auxList=[None]*len(list)
+    subSeq(0,list,auxList,i)

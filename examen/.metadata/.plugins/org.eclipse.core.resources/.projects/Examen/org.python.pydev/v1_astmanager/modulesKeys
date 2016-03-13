@@ -1,0 +1,9 @@
+MODULES_MANAGER_V2
+Builder|C:\Users\name\Desktop\examen\Examen\Builder.py
+Controller|C:\Users\name\Desktop\examen\Examen\Controller.py
+Domain|C:\Users\name\Desktop\examen\Examen\Domain.py
+Menu|C:\Users\name\Desktop\examen\Examen\Menu.py
+Repository.DictionaryRepository|C:\Users\name\Desktop\examen\Examen\Repository\DictionaryRepository.py
+Repository.__init__|C:\Users\name\Desktop\examen\Examen\Repository\__init__.py
+Validator|C:\Users\name\Desktop\examen\Examen\Validator.py
+unittesting|C:\Users\name\Desktop\examen\Examen\unittesting.py

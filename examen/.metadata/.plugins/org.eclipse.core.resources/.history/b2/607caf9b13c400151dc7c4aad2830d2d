@@ -1,0 +1,25 @@
+'''
+Created on 26 Jan 2016
+
+@author: name
+'''
+
+if __name__ == '__main__':
+    pass
+
+from Repository.DictionaryRepository import DictRepository
+from Controller import Controller
+from Menu import Menu
+
+class Builder:
+    
+    def __init__(self):
+        self.__repository=DictRepository()
+        self.__controller=Controller(self.__repository)
+        
+    def startApp(self):
+        menu=Menu()
+        menu.autoPlay()
+
+builder=Builder()
+builder.startApp()

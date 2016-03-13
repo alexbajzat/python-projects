@@ -1,0 +1,26 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\name\Desktop\FP\lab13\.metadata\.plugins\org.eclipse.core.resources\.projects\Lab13\com.python.pydev.analysis\v2_indexcache
+recursivitate.OrderedSeqIterative|1452586476804889000|C:\Users\name\Desktop\FP\lab13\Lab13\recursivitate\OrderedSeqIterative.py
+recursivitate.__init__|1451663826011268000|C:\Users\name\Desktop\FP\lab13\Lab13\recursivitate\__init__.py
+recursivitate.OrderedSeq|1451745352316774000|C:\Users\name\Desktop\FP\lab13\Lab13\recursivitate\OrderedSeq.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+2=recursivitate.OrderedSeqIterative
+1=recursivitate.OrderedSeq
+-- END DICTIONARY
+-- START TREE 1
+8
+aux|1|auxList!11@
+fir|1|firstTime!19@
+iss|2|isSorted!10@isSorted!18@
+lis|2|list!11@list!19@
+new|1|newList!19@
+pri|2|printList!18@printList!10@
+sol|1|solution!10@
+sub|1|subSeq!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,37 @@
+'''
+Created on 26 Jan 2016
+
+@author: name
+'''
+
+class Word:
+    def __init__(self,initLang,initWord,destLang,finalWord):
+        
+        errors=""
+        self.initLang=initLang.upper()
+        self.initWord=initWord.upper()
+        self.destLang=destLang.upper()
+        self.finalWord=finalWord.upper()
+        
+        if self.initWord==self.finalWord:
+            errors+="Cuvintele introduse sunt identice! \n "
+        
+        if not initLang=="RO" or initLang == "EN" or initLang == "FR" and not destLang=="RO" or initLang == "EN" or initLang == "FR":
+            errors+="Cuvintele nu corespund limbilor acceptate! \n "
+        
+        if len(errors)>0:
+            raise ValueError,errors
+        
+            
+        
+        
+    def getInitLang(self):
+        return self.initLang
+    def getInitWord(self):
+        return self.initWord
+    def getDestLang(self):
+        return self.destLang
+    def getFinalWord(self):
+        return self.finalWord
+    
+    

@@ -1,0 +1,34 @@
+'''
+Created on 26 Jan 2016
+
+@author: name
+'''
+from Domain import Word
+from Repository.DictionaryRepository import *
+import unittest
+
+class TestCase(unittest.TestCase):
+
+    def setUp(self):
+        unittest.TestCase.setUp(self)
+
+    def tearDown(self):
+        unittest.TestCase.tearDown(self)
+
+    def testDomain(self):
+        initLang="Ro"
+        destLang="eN"
+        fWord="ceva"
+        sWord="something"
+        dictWord=Word(initLang,fWord,destLang,sWord)
+        assert(dictWord.getInitLang()==initLang)
+        assert(dictWord.getDestLang()==destLang)
+        assert(dictWord.getInitWord()==fWord)
+        assert(dictWord.getFinalWord()==sWord)
+        
+    def testFile(self):
+        dictionar=DictRepository()
+        assert(len(dictionar.getDictionary())!=0)
+       
+if __name__ == '__main__':
+    unittest.main()

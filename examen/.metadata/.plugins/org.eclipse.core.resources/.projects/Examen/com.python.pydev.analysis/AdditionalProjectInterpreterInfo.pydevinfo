@@ -1,0 +1,70 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\name\Desktop\examen\.metadata\.plugins\org.eclipse.core.resources\.projects\Examen\com.python.pydev.analysis\v2_indexcache
+Repository.__init__|1453800148315840000|C:\Users\name\Desktop\examen\Examen\Repository\__init__.py
+Builder|1453802420019328000|C:\Users\name\Desktop\examen\Examen\Builder.py
+Repository.DictionaryRepository|1453803830988769000|C:\Users\name\Desktop\examen\Examen\Repository\DictionaryRepository.py
+unittesting|1453804285835739000|C:\Users\name\Desktop\examen\Examen\unittesting.py
+Menu|1453807266930178000|C:\Users\name\Desktop\examen\Examen\Menu.py
+Domain|1453806691427516000|C:\Users\name\Desktop\examen\Examen\Domain.py
+Controller|1453807979406172000|C:\Users\name\Desktop\examen\Examen\Controller.py
+-- END DISKCACHE
+-- START DICTIONARY
+17
+11=Word
+1=Builder
+3=Repository.DictionaryRepository
+5=unittesting
+14=Menu.getOption
+2=Controller
+17=Controller.newWord
+7=Builder.__init__
+12=Controller.__init__
+15=Menu.autoPlay
+8=Menu.__init__
+10=DictRepository
+16=TestCase
+9=DictRepository.__init__
+13=Word.__init__
+4=Menu
+6=Domain
+-- END DICTIONARY
+-- START TREE 1
+7
+bui|2|Builder!9@builder!11@
+con|1|Controller!17@
+dic|1|DictRepository!25@
+men|1|Menu!33@
+tes|1|TestCase!41@
+val|0|
+wor|1|Word!49@
+-- END TREE
+-- START TREE 2
+26
+|0|
+__c|2|__controller!7&11@__controller!8&35@
+__d|1|__dictionary!9&27@
+__i|5|__init__!10&26@__init__!4&34@__init__!1&10@__init__!2&18@__init__!11&50@
+__r|2|__repository!12&19@__repository!7&11@
+add|1|addWord!10&26@
+aut|1|autoPlay!4&34@
+del|1|deleteWord!2&18@
+des|1|destLang!13&51@
+err|0|
+fin|1|finalWord!13&51@
+get|7|getDestLang!11&50@getDictionary!2&18@getInitLang!11&50@getInitWord!11&50@getDictionary!10&26@getFinalWord!11&50@getOption!4&34@
+ini|2|initWord!13&51@initLang!13&51@
+new|1|newWord!2&18@
+opt|2|option!14&35@option!15&35@
+pri|1|printMainMenu!4&34@
+sav|1|saveList!2&18@
+set|1|setUp!16&42@
+sta|1|startApp!1&10@
+tea|1|tearDown!16&42@
+tes|3|testDeleteWord!16&42@testDomain!16&42@testNewAndAddWord!16&42@
+tos|1|toShow!8&35@
+tra|1|translateFromFile!2&18@
+val|0|
+wor|1|word!17&19@
+wri|1|writeToFile!10&26@
+-- END TREE

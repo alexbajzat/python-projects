@@ -1,0 +1,60 @@
+'''
+Created on 26 Jan 2016
+
+@author: name
+'''
+from Domain import *
+
+class Controller:
+    def __init__(self,repository):
+        self.__repository=repository
+        
+    def newWord(self, initLang,initWord, destLang,finalWord):
+    
+            self.word=Word(initLang,initWord,destLang,finalWord)
+      
+            self.__repository.addWord(self.word)
+        
+    
+    def getDictionary(self):
+        return self.__repository.getDictionary()
+    
+    def deleteWord(self,word):
+        dictionary=self.__repository.getDictionary()
+        for i in dictionary:
+            if i.getInitWord()==word or i.getFinalWord()==word:
+                dictionary.remove(i)
+                
+    def translateFromFile(self,fileName,initLang, destLang):
+        try:
+            translatedString=""
+            file=open(fileName,'r')
+            dictionary=self.__repository.getDictionary()
+            for line in file.readlines():
+                if line!="":
+                    
+                    line=line.split(" ")
+                    
+                    for word in line:
+                        if word!="" and word!=" ":
+                            word=word.upper()
+                            translated=False
+                            for i in dictionary:
+                                if i.getInitWord()==word:
+                                    if i.getInitLang()==initLang and i.getDestLang()==destLang:
+                                        translatedString+=i.getFinalWord()+ " "
+                                        translated=True
+                                elif i.getFinalWord()==word:
+                                    if i.getInitLang()==destLang and i.getDestLang()==initLang:
+                                        translatedString=i.getInitWord()+ " "
+                                        translated=True
+                        if not translated:
+                            translatedString+="{"+word+"}"
+                
+            return translatedString
+        except IOError:
+            print("File not found! ")
+            
+    
+    def saveList(self):
+        self.__repository.writeToFile()
